@@ -1,0 +1,46 @@
+.header{
+  margin-right: 30px;
+}
+.nav{
+  display:inline;
+  margin-right: 30px;
+}
+.nav .li-style{
+  
+  margin-left: 40px;
+  display:inline;
+  float:right;
+  padding-top: 40px;
+  text-decoration: none !important;
+}
+.li-style1{
+  margin-right: 400px;
+  text-decoration: none;
+
+}
+.Center {
+  text-align: left;
+  color: gray;
+  padding-left: 400px;
+  
+  
+}
+.Welcome {
+  margin-left: 600px;
+  margin-right: 600px;
+  text-align: center;
+
+  border-bottom: 1px solid #e5e5e5;
+  margin-top:30px;
+}
+
+
+
+.footer{
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  left:600px;
+  right: 600px;
+  text-align: center;
+}
