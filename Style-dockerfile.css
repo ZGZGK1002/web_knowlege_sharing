@@ -23,18 +23,29 @@
   color: gray;
   padding-left: 400px;
   
-  
 }
 .Welcome {
   margin-left: 600px;
   margin-right: 600px;
   text-align: center;
-
   border-bottom: 1px solid #e5e5e5;
   margin-top:30px;
 }
 
+.content{
+  margin-left:600px; 
+  margin-right: 600px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-top:30px;
+  height:760px;
+}
 
+.content_link{
+  text-align: center;
+  margin-top: 150px;
+  height:100%;
+  width:100%;
+}
 
 .footer{
   height: 50px;
@@ -43,4 +54,18 @@
   left:600px;
   right: 600px;
   text-align: center;
+}
+
+.content_link1{
+  text-align: center;
+  margin-top: 300px;
+}
+.content_link2{
+  text-align: center;
+}
+
+.content_link4{
+
+  text-align: center;
+  margin-top: 100px;
 }

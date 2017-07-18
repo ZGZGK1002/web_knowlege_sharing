@@ -28,6 +28,27 @@
 				<p>Welcome to dockerfile sharing page</p>
 				<p>Learn!</p>
 			</div>
+			<div class="content">
+				<h4>Dockerfile基本框架</h4>
+				<p>1. 基础镜像：以哪个镜像作为基础进行制作，用法是FROM 基础镜像名称</p>
+				<p>2. 维护者信息：需要写下该Dockerfile编写人的姓名或邮箱，用法是MANITAINER 名字/邮箱</p>
+				<p>3. 镜像操作命令：对基础镜像要进行的改造命令，比如安装新的软件，进行哪些特殊配置等，常见的是RUN 命令</p>
+				<p>4. 容器启动命令：当基于该镜像的容器启动时需要执行哪些命令，常见的是CMD 命令或ENTRYPOINT</p>
+				
+				<h4>Example</h4>
+				<p># Version 0.1</p>
+				<p># 基础镜像</p>
+				<p>FROM ubuntu:latest</p>
+				<p># 维护者信息</p>
+				<p>MAINTAINER shiyanlou@shiyanlou.com</p>
+				<p># 镜像操作命令</p>
+				<p>RUN apt-get -yqq update && apt-get install -yqq apache2 && apt-get clean</p>
+				<p># 容器启动命令</p>
+				<p>CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]</p>
+				<h4 class="content_link">
+					<a href="file:///C:/DEV/web/LikeWebapp/Dockerfile1.html" style="text-decoration:none;">Next Page</a>
+				</h4>
+			</div>
 			<div class="footer">
 				<p>from Zhou home page</p>
 			</div>

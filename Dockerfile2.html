@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="Knowlege Sharing" content="">
+		<link rel="stylesheet" href="./Style-dockerfile.css">
+		<title>Dockerfile</title>
+	</head>
+	<body>
+		<div class="container">
+			<div clss="header">
+				<ul class="nav">
+					<li class="li-style li-style1">
+						<a href="file:///C:/DEV/web/LikeWebapp/index.html#" style="text-decoration:none;">Home</a>
+					</li>
+					<li class="li-style">
+						<a href="http://www.cnblogs.com/coolworld/p/5486656.html" style="text-decoration:none;">About</a>
+					</li>
+					<li class="li-style">
+						<a href="https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact" style="text-decoration:none;">Content</a>
+					</li>
+				</ul>
+				<h3 class="Center" >KNOWLEGE SHARE</h3>
+			</div>
+
+			<div class="Welcome">
+				<h1>Dockerfile</h1>
+				<p>Welcome to dockerfile sharing page</p>
+				<p>Learn!</p>
+			</div>
+			<div class="content">
+				<h4>ENV环境变量</h4>
+				<p>构建指令，在image中设置一个环境变量</p>
+				<p>设置了后，后续的RUN命令都可以使用，container启动后，可以通过docker inspect查看这个环境变量，也可以通过在docker run --env key=value时设置或修改环境变量。</p>
+				<p>ENV key value</p>
+				<p>ENV key=value</p>
+				
+				<h4>MAINTAINER 指令</h4>
+				<p>维护人员信息说明,用于将image的制作者相关的信息写入到image中。当我们对该image执行docker inspect命令时，输出中有相应的字段记录该信息。</p>
+				<p>MAINTAINER name</p>
+
+				<h4>RUN 指令</h4>
+				<p>RUN命令用于执行一些命令，如安装软件等</p>
+				<p>RUN可以运行任何被基础image支持的命令。如基础image选择了ubuntu，那么软件管理部分只能使用ubuntu的命令。</p>
+				<p>RUN命令的结果会被缓存，供下一个指令使用</p>
+				<p>如果不需要缓存，使用docker build --no-cache=true</p>
+				<p>有2种RUN格式</p>
+				<p>shell模式</p>
+				<p>RUN command (shell form, the command is run in a shell - /bin/sh -c)</p>
+				<p>exec模式</p>
+				<p>RUN ["executable", "param1", "param2"] (exec form)</p>
+				<h4 class="content_link2">
+					<a href="file:///C:/DEV/web/LikeWebapp/Dockerfile3.html" style="text-decoration:none;">Next Page</a>
+				</h4>
+			</div>
+			<div class="footer">
+				<p>from Zhou home page</p>
+			</div>
+		</div>
+	</body>
+</html>

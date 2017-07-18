@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="Knowlege Sharing" content="">
+		<link rel="stylesheet" href="./Style-dockerfile.css">
+		<title>Dockerfile</title>
+	</head>
+	<body>
+		<div class="container">
+			<div clss="header">
+				<ul class="nav">
+					<li class="li-style li-style1">
+						<a href="file:///C:/DEV/web/LikeWebapp/index.html#" style="text-decoration:none;">Home</a>
+					</li>
+					<li class="li-style">
+						<a href="http://www.cnblogs.com/coolworld/p/5486656.html" style="text-decoration:none;">About</a>
+					</li>
+					<li class="li-style">
+						<a href="https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact" style="text-decoration:none;">Content</a>
+					</li>
+				</ul>
+				<h3 class="Center" >KNOWLEGE SHARE</h3>
+			</div>
+
+			<div class="Welcome">
+				<h1>Dockerfile</h1>
+				<p>Welcome to dockerfile sharing page</p>
+				<p>Learn!</p>
+			</div>
+			<div class="content">
+				<h4>CMD 指令</h4>
+				<p>只能有一个CMD指令，如果有多个，最后一个将被生效</p>
+				<p>CMD使用shell,或者exec方式，则运行容器的时候将运行命令</p>
+				<p>一个CMD的主要目的是为执行容器提供默认值。这些设置可以包括一个可执行文件，也可以不执行，在这种情况下，您必须指定一个入口指令以及。</p>
+				<p>CMD指令有3种使用方式</p>
+				
+				<p>exec方式，优先</p>
+				<p>CMD ["executable","param1","param2"]</p>
+				<p>如果不想用shell方式执行命令，必需采用 exec json arrayy方式（命令及参数使用双引号），如：</p>
+				<p>CMD ["/usr/bin/wc","--help"]</p>
+				<p>shell方式</p>
+				<p>CMD command param1 param2 (shell form)</p>
+				<p>使用以下CMD命令，将以/bin/sh -c 方式运行命令</p>
+				<p>CMD echo "This is a test." | wc -</p>
+
+				<p>注意：不要混淆RUN 命令和 CMD</p>
+				<p>RUN 会运行命令，并提交结果在构建IMAGE时</p>
+				<p>CMD不会在构建时执行，在启动IMAGE时执行</p>
+
+				<h4>LABEL 指令</h4>
+				<p>指定image标签，如版本，说明等</p>
+				<p>LABEL version="1.0"</p>
+				
+
+
+				<h4 class="content_link2">
+					<a href="file:///C:/DEV/web/LikeWebapp/Dockerfile4.html" style="text-decoration:none;">Next Page</a>
+				</h4>
+			</div>
+			<div class="footer">
+				<p>from Zhou home page</p>
+			</div>
+		</div>
+	</body>
+</html>

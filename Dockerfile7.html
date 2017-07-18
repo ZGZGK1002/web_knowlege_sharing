@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="Knowlege Sharing" content="">
+		<link rel="stylesheet" href="./Style-dockerfile.css">
+		<title>Dockerfile</title>
+	</head>
+	<body>
+		<div class="container">
+			<div clss="header">
+				<ul class="nav">
+					<li class="li-style li-style1">
+						<a href="file:///C:/DEV/web/LikeWebapp/index.html#" style="text-decoration:none;">Home</a>
+					</li>
+					<li class="li-style">
+						<a href="http://www.cnblogs.com/coolworld/p/5486656.html" style="text-decoration:none;">About</a>
+					</li>
+					<li class="li-style">
+						<a href="https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact" style="text-decoration:none;">Content</a>
+					</li>
+				</ul>
+				<h3 class="Center" >KNOWLEGE SHARE</h3>
+			</div>
+
+			<div class="Welcome">
+				<h1>Dockerfile</h1>
+				<p>Welcome to dockerfile sharing page</p>
+				<p>Learn!</p>
+			</div>
+			<div class="content">
+				<h4>USER指令</h4>
+				<p>指令格式：</p>
+				<p>USER daemon </p>
+				<p>指令说明 </p>
+				<p>设置指令，设置启动容器的用户，默认是root用户</p>
+				<p>设置容器以什么用户运行，RUN,CMD,ENTRYPOINT相关命令会以该用户运行</p>
+
+				<h4>WORKDIR指令</h4>
+				<p>指令格式</p>
+				<p>WORKDIR /path/to/workdir</p>
+				<p>设置指令，可以多次切换(相当于cd命令)，对RUN,CMD,ENTRYPOINT,COPY,ADD生效。如果不存在会创建
+					可以设置多次，每次设置相对于上次路径，如</p>
+				<p>WORKDIR /a</p>
+				<p>WORKDIR b</p>
+				<p>WORKDIR c</p>
+				<p>RUN pwd</p>
+				<p>最终pwd结果是/a/b/c</p>
+
+				
+				
+								
+				<h4 class="content_link4">
+					<a href="file:///C:/DEV/web/LikeWebapp/index.html#" style="text-decoration:none;">Next Page</a>
+				</h4>
+			</div>
+			<div class="footer">
+				<p>from Zhou home page</p>
+			</div>
+		</div>
+	</body>
+</html>

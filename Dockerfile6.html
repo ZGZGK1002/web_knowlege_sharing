@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="Knowlege Sharing" content="">
+		<link rel="stylesheet" href="./Style-dockerfile.css">
+		<title>Dockerfile</title>
+	</head>
+	<body>
+		<div class="container">
+			<div clss="header">
+				<ul class="nav">
+					<li class="li-style li-style1">
+						<a href="file:///C:/DEV/web/LikeWebapp/index.html#" style="text-decoration:none;">Home</a>
+					</li>
+					<li class="li-style">
+						<a href="http://www.cnblogs.com/coolworld/p/5486656.html" style="text-decoration:none;">About</a>
+					</li>
+					<li class="li-style">
+						<a href="https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact" style="text-decoration:none;">Content</a>
+					</li>
+				</ul>
+				<h3 class="Center" >KNOWLEGE SHARE</h3>
+			</div>
+
+			<div class="Welcome">
+				<h1>Dockerfile</h1>
+				<p>Welcome to dockerfile sharing page</p>
+				<p>Learn!</p>
+			</div>
+			<div class="content">
+				<h4>ENTRYPOINT指令</h4>
+				<p>指令格式：</p>
+				<p>ENTRYPOINT command param1 param2 (shell form)</p>
+				<p>指令说明：设置指令，指定容器启动时执行的命令，可以多次设置，但是只有最后一个有效</p>
+				<p>该指令的使用分为两种情况，一种是独自使用，另一种和CMD指令配合使用。</p>
+				<p>当独自使用时，如果你还使用了CMD命令且CMD是一个完整的可执行的命令，那么CMD指令和ENTRYPOINT会互相覆盖只有最后一个CMD或者ENTRYPOINT有效</p>
+				<p># CMD指令将不会被执行，只有ENTRYPOINT指令被执行</p>
+				<p>CMD echo “Hello, World!”</p>
+				<p>ENTRYPOINT ls -l</p>
+
+				<h4>VOLUME指令</h4>
+				<p>指令格式</p>
+				<p>VOLUME ["/data"]</p>
+				<p>VOLUME /var/log</p>
+				<p>设置指令，使容器中的一个目录具有持久化存储数据的功能，该目录可以被容器本身使用，也可以共享给其他容器使用。我们知道容器使用的是AUFS，这种文件系统不能持久化数据，当容器关闭后，所有的更改都会丢失。当容器中的应用有持久化数据的需求时可以在Dockerfile中使用该指令。</p>
+
+				
+								
+				<h4 class="content_link4">
+					<a href="file:///C:/DEV/web/LikeWebapp/Dockerfile7.html" style="text-decoration:none;">Next Page</a>
+				</h4>
+			</div>
+			<div class="footer">
+				<p>from Zhou home page</p>
+			</div>
+		</div>
+	</body>
+</html>
