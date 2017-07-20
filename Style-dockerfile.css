@@ -1,3 +1,8 @@
+.begin{
+  background-image: url("Banner2.png");
+  height: 300px;
+
+}
 .header{
   margin-right: 30px;
 }
@@ -28,7 +33,7 @@
   margin-left: 600px;
   margin-right: 600px;
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+
   margin-top:30px;
 }
 
@@ -65,7 +70,6 @@
 }
 
 .content_link4{
-
   text-align: center;
   margin-top: 100px;
 }

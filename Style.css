@@ -1,3 +1,8 @@
+.begin{
+  background-image: url("Banner2.png");
+  height: 300px;
+
+}
 .header{
   margin-right: 30px;
 }
@@ -20,17 +25,18 @@
 }
 .Center {
   text-align: left;
-  color: gray;
+  color: #000066;
   padding-left: 400px;
-  
+  font-size: 16px;
+
   
 }
 .Welcome {
   margin-left: 600px;
   margin-right: 600px;
   text-align: center;
-
-  border-bottom: 1px solid #e5e5e5;
+  margin-top: 30px;
+  #border-bottom: 1px solid #e5e5e5;
   margin-top:30px;
 }
 
