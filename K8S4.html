@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="Knowlege Sharing" content="">
 		<link rel="stylesheet" href="./Style-dockerfile.css">
-		<title>Dockerfile</title>
+		<title>Kubernetes</title>
 	</head>
 	<body>
 		<div class="container">
@@ -24,33 +24,31 @@
 			</div>
 
 			<div class="Welcome">
-				<h1>Dockerfile</h1>
-				<p>Welcome to dockerfile sharing page</p>
+				<h1>Kubernetes</h1>
+				<p>Welcome to Kubernetes sharing page</p>
 				<p>Learn!</p>
 			</div>
 			<div class="content">
-				<h4>USER指令</h4>
-				<p>指令格式：</p>
-				<p>USER daemon </p>
-				<p>指令说明 </p>
-				<p>设置指令，设置启动容器的用户，默认是root用户</p>
-				<p>设置容器以什么用户运行，RUN,CMD,ENTRYPOINT相关命令会以该用户运行</p>
+				<h4>Dockerfile</h4>
+				<p class="k8s1_color k8s1_1">docker build -f Dockerfile -t node:v1 .</p>
+				<h4>Deployment</h4>
+				<p class="k8s1_color k8s1_1"> kubectl creat -f depl.ymal</p>
+				<p class="k8s1_color k8s1_1">kubectl get deployments</p>
+				<p class="k8s1_color k8s1_1">kubectl delete -f depl.ymal</p>
+				<p class="k8s1_color k8s1_1">kubectl delete deployment (name)</p>
+				
+				<p class="k8s1_color k8s1_1">kubectl get pods</p>
+				<p class="k8s1_color k8s1_1">kubectl describe pods (name)</p>
+				<h4>Service</h4>
+				<p class="k8s1_color k8s1_1">kubectl create -f service.yaml</p>
+				<p class="k8s1_color k8s1_1">kubectl get services</p>
+				<p class="k8s1_color k8s1_1">kubectl delete services (name)</p>
+				<p class="k8s1_color k8s1_1">kubectl exec node-3434330614-b0hnw -it /bin/bash</p>
 
-				<h4>WORKDIR指令</h4>
-				<p>指令格式</p>
-				<p>WORKDIR /path/to/workdir</p>
-				<p>设置指令，可以多次切换(相当于cd命令)，对RUN,CMD,ENTRYPOINT,COPY,ADD生效。如果不存在会创建
-					可以设置多次，每次设置相对于上次路径，如</p>
-				<p>WORKDIR /a</p>
-				<p>WORKDIR b</p>
-				<p>WORKDIR c</p>
-				<p>RUN pwd</p>
-				<p>最终pwd结果是/a/b/c</p>
-
+				<p class="k8s1_color k8s1_1">curl  172.78.78.96:8080</p>
 				
 				
-								
-				<h4 class="content_link4">
+				<h4 class="content_link3">
 					<a href="file:///C:/DEV/web/LikeWebapp/index.html#" style="text-decoration:none;">Next Page</a>
 				</h4>
 			</div>

@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="Knowlege Sharing" content="">
 		<link rel="stylesheet" href="./Style-dockerfile.css">
-		<title>Dockerfile</title>
+		<title>Kubernetes</title>
 	</head>
 	<body>
 		<div class="container">
@@ -24,34 +24,26 @@
 			</div>
 
 			<div class="Welcome">
-				<h1>Dockerfile</h1>
+				<h1>Kubernetes</h1>
 				<p>Welcome to dockerfile sharing page</p>
 				<p>Learn!</p>
 			</div>
 			<div class="content">
-				<h4>USER指令</h4>
-				<p>指令格式：</p>
-				<p>USER daemon </p>
-				<p>指令说明 </p>
-				<p>设置指令，设置启动容器的用户，默认是root用户</p>
-				<p>设置容器以什么用户运行，RUN,CMD,ENTRYPOINT相关命令会以该用户运行</p>
-
-				<h4>WORKDIR指令</h4>
-				<p>指令格式</p>
-				<p>WORKDIR /path/to/workdir</p>
-				<p>设置指令，可以多次切换(相当于cd命令)，对RUN,CMD,ENTRYPOINT,COPY,ADD生效。如果不存在会创建
-					可以设置多次，每次设置相对于上次路径，如</p>
-				<p>WORKDIR /a</p>
-				<p>WORKDIR b</p>
-				<p>WORKDIR c</p>
-				<p>RUN pwd</p>
-				<p>最终pwd结果是/a/b/c</p>
-
+				<h4>Create Node.js application</h4>
+				<p>用来监听8080端口， 当有外部访问这个端口时，返回“设定的值”</p>
+				<p>The next step is to write the application. Save this code in a folder named hellonode with the filename server.js:</p>
+				<p class="k8s1_color">var http = require('http');</p>
+				<p class="k8s1_color">var handleRequest = function(request, response) {</p>
+				<p class="k8s1_1 k8s1_color">console.log('Received request for URL: ' + request.url);</p>
 				
+				<p class="k8s1_1 k8s1_color">response.writeHead(200);</p>
+				<p class="k8s1_1 k8s1_color">response.end('Hello World!');</p>
+				<p class="k8s1_color">};</p>
+				<p class="k8s1_color">var www = http.createServer(handleRequest);</p>
+				<p class="k8s1_color">www.listen(8080);</p>
 				
-								
-				<h4 class="content_link4">
-					<a href="file:///C:/DEV/web/LikeWebapp/index.html#" style="text-decoration:none;">Next Page</a>
+				<h4 class="content_link3">
+					<a href="file:///C:/DEV/web/LikeWebapp/K8S2.html" style="text-decoration:none;">Next Page</a>
 				</h4>
 			</div>
 			<div class="footer">

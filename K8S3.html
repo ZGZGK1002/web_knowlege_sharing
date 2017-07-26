@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="Knowlege Sharing" content="">
 		<link rel="stylesheet" href="./Style-dockerfile.css">
-		<title>Dockerfile</title>
+		<title>Kubernetes</title>
 	</head>
 	<body>
 		<div class="container">
@@ -24,34 +24,30 @@
 			</div>
 
 			<div class="Welcome">
-				<h1>Dockerfile</h1>
-				<p>Welcome to dockerfile sharing page</p>
+				<h1>Kubernetes</h1>
+				<p>Welcome to Kubernetes sharing page</p>
 				<p>Learn!</p>
 			</div>
 			<div class="content">
-				<h4>USER指令</h4>
-				<p>指令格式：</p>
-				<p>USER daemon </p>
-				<p>指令说明 </p>
-				<p>设置指令，设置启动容器的用户，默认是root用户</p>
-				<p>设置容器以什么用户运行，RUN,CMD,ENTRYPOINT相关命令会以该用户运行</p>
+				<h4>Create a service</h4>
+				<p>写service的yml文件， 使其能够与外界通信。而不是内部访问端口。</p>
+				<p class="k8s1_color">kind: Service</p>
+				<p class="k8s1_color">apiVersion: v1</p>
+				<p class="k8s1_color">metadata:</p>
+				<p class="k8s1_color k8s1_1">name: my-service</p>
+				
+				<p class="k8s1_color">spec:</p>
+				<p class="k8s1_color k8s1_1">selector:</p>
+				<p class="k8s1_color k8s1_2">app: MyApp</p>
+				<p class="k8s1_color k8s1_1">ports:</p>
+				<p class="k8s1_color k8s1_2">- protocol: TCP</p>
+				<p class="k8s1_color k8s1_3">port: 80</p>
 
-				<h4>WORKDIR指令</h4>
-				<p>指令格式</p>
-				<p>WORKDIR /path/to/workdir</p>
-				<p>设置指令，可以多次切换(相当于cd命令)，对RUN,CMD,ENTRYPOINT,COPY,ADD生效。如果不存在会创建
-					可以设置多次，每次设置相对于上次路径，如</p>
-				<p>WORKDIR /a</p>
-				<p>WORKDIR b</p>
-				<p>WORKDIR c</p>
-				<p>RUN pwd</p>
-				<p>最终pwd结果是/a/b/c</p>
-
+				<p class="k8s1_color k8s1_3">targetPort: 9376i</p>
 				
 				
-								
-				<h4 class="content_link4">
-					<a href="file:///C:/DEV/web/LikeWebapp/index.html#" style="text-decoration:none;">Next Page</a>
+				<h4 class="content_link3">
+					<a href="file:///C:/DEV/web/LikeWebapp/K8S4.html" style="text-decoration:none;">Next Page</a>
 				</h4>
 			</div>
 			<div class="footer">

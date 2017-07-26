@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="Knowlege Sharing" content="">
+		<link rel="stylesheet" href="./Style-dockerfile.css">
+		<title>Kubernetes</title>
+	</head>
+	<body>
+		<div class="container">
+			<div clss="header">
+				<ul class="nav">
+					<li class="li-style li-style1">
+						<a href="file:///C:/DEV/web/LikeWebapp/index.html#" style="text-decoration:none;">Home</a>
+					</li>
+					<li class="li-style">
+						<a href="http://www.cnblogs.com/coolworld/p/5486656.html" style="text-decoration:none;">About</a>
+					</li>
+					<li class="li-style">
+						<a href="https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact" style="text-decoration:none;">Content</a>
+					</li>
+				</ul>
+				<h3 class="Center" >KNOWLEGE SHARE</h3>
+			</div>
+
+			<div class="Welcome">
+				<h1>Kubernetes</h1>
+				<p>Welcome to Kubernetes sharing page</p>
+				<p>Learn!</p>
+			</div>
+			<div class="content">
+				<h4>Create a Deployment</h4>
+				<p>写deployment的yml文件，管理启动哪几个image, 启动几个</p>
+				<p class="k8s1_color">apiVersion: extensions/v1beta1</p>
+				<p class="k8s1_color">kind: Deployment</p>
+				<p class="k8s1_color">metadata:</p>
+				<p class="k8s1_1 k8s1_color">name: node</p>
+				
+				<p class="k8s1_color">spec:</p>
+				<p class="k8s1_1 k8s1_color">replicas: 1</p>
+				<p class="k8s1_1 k8s1_color">template:</p>
+				<p class="k8s1_2 k8s1_color">metadata:</p>
+				<p class="k8s1_3 k8s1_color">labels:</p>
+				<p class="k8s1_4 k8s1_color">app: node</p>
+
+				<p class="k8s1_2 k8s1_color">spec:</p>
+				<p class="k8s1_3 k8s1_color">containers:</p>
+				<p class="k8s1_3 k8s1_color">- image: node:v1</p>
+				<p class="k8s1_4 k8s1_color">name: mynode</p>
+				<p class="k8s1_4 k8s1_color">imagePullPolicy: Never</p>
+				<p class="k8s1_4 k8s1_color">ports:</p>
+				<p class="k8s1_4 k8s1_color">- containerPort: 8080</p>
+				
+				<h4 class="content_link2">
+					<a href="file:///C:/DEV/web/LikeWebapp/K8S3.html" style="text-decoration:none;">Next Page</a>
+				</h4>
+			</div>
+			<div class="footer">
+				<p>from Zhou home page</p>
+			</div>
+		</div>
+	</body>
+</html>
